@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="Cập Nhật Sinh Viên"
+        android:textAlignment="center"
+        android:textColor="#0022FF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="Họ tên:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_hoten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.5"
+            android:hint="Họ tên"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="Giới tính:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_gioitinh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/rb_nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Nam"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/rb_nu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="Điện thoại:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_dienthoai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.5"
+            android:hint="Điện thoại"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="Email:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.5"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_luu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#00BCD4"
+            android:text="Lưu" />
+
+        <Button
+            android:id="@+id/bt_thoat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5E5E"
+            android:text="Thoát" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:text="Đặng Thị Anh Vy - 2050531200361"
+        android:textAlignment="center" />
+
+</LinearLayout>
